@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+        //4.  Array filter
+        const num = [1,2,3,4,5,6,7,8];
+        const evenNum = num.filter(number => number % 2 === 0);
+        console.log(evenNum);
+
+        //5. Array Mapping
+        const num1 = [1,2,3,4,5,6,7,8];
+        const evenNum1 = num1.map(number => number * 2);
+        console.log(evenNum1);
+
+        //9.  Array Spreading
+        const num2 = [1,2,3,4,5];
+        const num3 = [6,7,8,9,10];
+        const allNum = [...num2, ...num3];
+        console.log(allNum);
+
+        //10.  Array finding max and min
+        const num4 = [1,2,3,4,5,6,7];
+        const max = Math.max(...num4);
+        const min = Math.min(...num4);
+        console.log("Max : "+max);
+        console.log("Min : "+min);
+
+        //16.  Creating a new Array with given length
+        const arr = Array(5);
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        arr[3] = 40;
+        arr[4] = 50;
+        console.log(arr);
+
+        //21. Array Intersection of 2 sets
+        const arr1 = [1,2,3,4,5];
+        const arr2 = [4,5,6,8,10];
+        const intersection = arr1.filter(number => arr2.includes(number));
+        console.log(intersection);
+
+        //22.  Array Manipulation with slice
+        const arr3 = [1,2,3,4,5,6,7];
+        const arr4 = arr3.slice(2,5);
+        console.log(arr4);
+
+        //27.  Comparing 2 arrays of equality
+        const arr5 = [1,2,3,4,5];
+        const arr6 = [1,2,3,4,5];
+        console.log(arr5 == arr6);
+
+    </script>
+
+</body>
+</html>
