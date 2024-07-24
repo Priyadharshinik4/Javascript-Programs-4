@@ -55,6 +55,16 @@
         const arr6 = [1,2,3,4,5];
         console.log(arr5 == arr6);
 
+        //28.  Converting array to object
+        const arr7 = [1,2,3,4,5];
+        const obj = Object.fromEntries(arr7.map((x, i) => [i, x]));
+        console.log(obj);
+
+        //29.  Removing array items by Index
+        const arr8 = [1,2,3,4,5];
+        arr8.splice(2,1);
+        console.log(arr8);
+
     </script>
 
 </body>
